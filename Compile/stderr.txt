@@ -1,0 +1,41 @@
+main.cpp:4:47: error: expected identifier before numeric constant
+    4 | void CompareThreeNumbers(int a, int b, int c, 4& 6)
+      |                                               ^
+main.cpp:4:47: error: expected ‘,’ or ‘...’ before numeric constant
+main.cpp: In function ‘void CompareThreeNumbers(int, int, int, int)’:
+main.cpp:7:13: error: declaration of ‘int a’ shadows a parameter
+    7 |         int a, b, c;
+      |             ^
+main.cpp:4:30: note: ‘int a’ previously declared here
+    4 | void CompareThreeNumbers(int a, int b, int c, 4& 6)
+      |                          ~~~~^
+main.cpp:7:16: error: declaration of ‘int b’ shadows a parameter
+    7 |         int a, b, c;
+      |                ^
+main.cpp:4:37: note: ‘int b’ previously declared here
+    4 | void CompareThreeNumbers(int a, int b, int c, 4& 6)
+      |                                 ~~~~^
+main.cpp:7:19: error: declaration of ‘int c’ shadows a parameter
+    7 |         int a, b, c;
+      |                   ^
+main.cpp:4:44: note: ‘int c’ previously declared here
+    4 | void CompareThreeNumbers(int a, int b, int c, 4& 6)
+      |                                        ~~~~^
+main.cpp:9:17: warning: empty parentheses were disambiguated as a function declaration [-Wvexing-parse]
+    9 |         int main()
+      |                 ^~
+main.cpp:9:17: note: remove parentheses to default-initialize a variable
+    9 |         int main()
+      |                 ^~
+      |                 --
+main.cpp:9:17: note: or replace parentheses with braces to value-initialize a variable
+main.cpp:10:9: error: a function-definition is not allowed here before ‘{’ token
+   10 |         {
+      |         ^
+main.cpp:18:9: error: a function-definition is not allowed here before ‘{’ token
+   18 |         {
+      |         ^
+main.cpp:28:9: error: ‘result’ was not declared in this scope; did you mean ‘Result’?
+   28 |         result.min = a;
+      |         ^~~~~~
+      |         Result
